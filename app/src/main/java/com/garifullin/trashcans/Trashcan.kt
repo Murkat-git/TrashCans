@@ -2,4 +2,11 @@ package com.garifullin.trashcans
 
 import com.google.firebase.firestore.GeoPoint
 
-data class Trashcan(val distance:Float, val maxDistance:Float, val weight:Float, val maxVeight:Float, val location:GeoPoint)
+class Trashcan{
+    val distance:Float = 0f
+    val maxDistance:Float = 0f
+    val weight:Float = 0f
+    val maxWeight:Float = 0f
+    val location:GeoPoint = GeoPoint(0.0, 0.0)
+    val imgUrl: String = ""
+}

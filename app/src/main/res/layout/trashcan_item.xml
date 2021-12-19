@@ -4,50 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="200dp"
     android:layout_height="200dp">
+    <ImageView
+        android:id="@+id/trashcanImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <com.skydoves.progressview.ProgressView
         android:id="@+id/progressDistance"
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:progressView_autoAnimate="true"
         app:progressView_colorBackground="@color/white"
-        app:progressView_colorProgress="#4CAF50"
+        app:progressView_colorProgress="#3F51B5"
         app:progressView_labelColorInner="@color/white"
         app:progressView_labelColorOuter="@color/black"
-        app:progressView_labelSize="13sp"
+        app:progressView_labelSize="8sp"
         app:progressView_labelSpace="10dp"
-        app:progressView_labelText="Осталось места"
+        app:progressView_labelText="Занято места"
         app:progressView_labelTypeface="bold"
-        app:progressView_max="100"
-        app:progressView_min="15"
         app:progressView_orientation="vertical"
         app:progressView_padding="1dp"
-        app:progressView_progress="40"
         app:progressView_progressFromPrevious="false"
         app:progressView_radius="12dp" />
 
     <com.skydoves.progressview.ProgressView
         android:id="@+id/progressWeight"
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:progressView_autoAnimate="true"
         app:progressView_colorBackground="@color/white"
-        app:progressView_colorProgress="#4CAF50"
+        app:progressView_colorProgress="#9C27B0"
         app:progressView_labelColorInner="@color/white"
         app:progressView_labelColorOuter="@color/black"
-        app:progressView_labelSize="13sp"
+        app:progressView_labelSize="8sp"
         app:progressView_labelSpace="10dp"
         app:progressView_labelText="Вес"
         app:progressView_labelTypeface="bold"
-        app:progressView_max="100"
-        app:progressView_min="15"
         app:progressView_orientation="vertical"
         app:progressView_padding="1dp"
-        app:progressView_progress="40"
         app:progressView_progressFromPrevious="false"
-        app:progressView_radius="12dp" />
+        app:progressView_radius="12dp" >
+
+    </com.skydoves.progressview.ProgressView>
 </androidx.constraintlayout.widget.ConstraintLayout>
